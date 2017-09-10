@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var mongojs = require('mongojs');
-var db = mongojs('mongodb://localhost:27017/portfolio', ['home', 'aboutme','contacts','projects','events']);
+//var db = mongojs('mongodb://localhost:27017/portfolio', ['home', 'aboutme','contacts','projects','events']);
+var db = mongojs('mongodb://anisa:Nickelback20@ds133054.mlab.com:33054/portfolio', ['home', 'aboutme','contacts','projects','events']);
 
 var today = new Date();
 function isNew(data){
