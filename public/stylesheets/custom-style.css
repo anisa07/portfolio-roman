@@ -1,0 +1,168 @@
+.carousel-custom {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    border-radius: 15px;
+}
+
+.carousel-control {
+    border-radius: 15px;
+}
+
+.custom-col {
+    max-width: 242px;
+}
+
+.common_component {
+    /* height: 100vh;*/
+}
+
+.common-title{
+    padding-top: 2%;
+    margin-bottom: 2%;
+}
+
+#custom_navigation {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+.custom-list a:visited {
+    text-decoration: none;
+}
+
+#home{
+    background-image: url('/images/main.jpg');
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#main-title{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    background : ghostwhite;
+    animation: show 4.5s;
+    animation-fill-mode: both;
+    padding-top: 0;
+    padding-bottom: 15px;
+    max-width: 45%;
+}
+
+.contacts{
+    display: flex;
+}
+
+
+@media (max-width: 1074px){
+    #main-title{
+        min-width: 100%;
+        left: 0;
+        top: 52px;
+        /* min-height: 100%; */
+    }
+    .mainPhoto{
+        display: none;
+    }
+    .contacts{
+        display: block;
+    }
+}
+
+.title-container{
+    display: flex;
+}
+
+.mainPhoto{
+    max-width: 210px;
+    max-height: 200px;
+    margin: 0 10px 0 5px;
+}
+
+.mainImg{
+    width: 100%;
+    visibility: hidden;
+}
+
+.cloudImg {
+    visibility: hidden;
+}
+
+.cloud{
+    position: absolute;
+}
+
+.cloud2{
+    background-image: url('/images/cloud2.png');
+    top:20%;
+    animation: cloud1-move 5s;
+    animation-fill-mode: forwards;
+    left: 20%
+}
+
+.cloud3{
+    background-image: url('/images/cloud3.png');
+    top:20%;
+    animation: cloud1-move 2s;
+    animation-fill-mode: forwards;
+    left: 60%
+}
+.cloud5{
+    background-image: url('/images/cloud5.png');
+    top:30%;
+    animation: cloud2-move 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    right: 10%
+}
+.cloud6{
+    background-image: url('/images/cloud6.png');
+    top: 5%;
+    animation: cloud2-move 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    right: 40%
+}
+
+@keyframes title-move{
+    0%{
+        left: -50%
+    }
+    100%{
+        left: 5%;
+    }
+}
+
+@keyframes show{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 0.85;
+    }
+}
+
+@keyframes cloud1-move{
+    100%{
+        left: 100%
+    }
+}
+
+@keyframes cloud2-move{
+    100%{
+        right: 100%
+    }
+}
+
+
+.about{
+    text-indent: 20px;
+}
+
+.event{
+    /* min-width: 250px; */
+}
